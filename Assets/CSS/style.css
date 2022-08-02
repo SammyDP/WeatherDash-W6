@@ -1,0 +1,14 @@
+.bg-img {
+  background-image: url(https://user-images.githubusercontent.com/107449948/181348383-cdfaa82e-f919-490e-9fc9-b4665770539a.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+}
+
+#search_title {
+  color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+}

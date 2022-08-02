@@ -1,3 +1,6 @@
+<p align="center">
+<img src="https://user-images.githubusercontent.com/107449948/180933920-7ed27beb-9b51-480b-acd2-8cf583afaade.png" />
+
 # Weather Dashboard
 
 Create an application that allows you to search cities and pull up weather info from an API
