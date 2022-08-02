@@ -28,43 +28,53 @@
           <input class="input" type="text" placeholder="Search Cities" />
         </div>
         <div class="control">
-          <button class="button is-info" id="search_btn">Search</button>
+          <button class="button is-info" id="search_btn">
+            <i class="fas fa-search"></i>
+          </button>
         </div>
       </div>
     </section>
 
+    <!-- Daily Forcast -->
     <section class="section">
       <div class="container">
         <div class="columns">
           <div class="column is-6"></div>
           <div class="column is-6">
-            <div class="box">Day Forcast for search</div>
+            <div class="box" id="daily_forcast">Daily Forcast</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Recent Searches -->
     <section class="section">
       <div class="container">
         <div class="columns">
           <div class="column is-2">
-            <div class="box">Recently Searched Cities</div>
+            <div class="box">
+              Recently Searched Cities
+              <ul id="recent_cities"></ul>
+              <button class="button is-success" id="clear_search">Clear</button>
+            </div>
           </div>
+
+          <!-- 5 Day Forcast -->
           <div class="column is-1"></div>
           <div class="column is-2">
-            <div class="box">Day 1</div>
+            <div class="box" id="day1">Day 1</div>
           </div>
           <div class="column is-2">
-            <div class="box">Day 2</div>
+            <div class="box" id="day2">Day 2</div>
           </div>
           <div class="column is-2">
-            <div class="box">Day 3</div>
+            <div class="box" id="day3">Day 3</div>
           </div>
           <div class="column is-2">
-            <div class="box">Day 4</div>
+            <div class="box" id="day4">Day 4</div>
           </div>
           <div class="column is-2">
-            <div class="box mr-3">Day 5</div>
+            <div class="box mr-3" id="day5">Day 5</div>
           </div>
         </div>
       </div>
