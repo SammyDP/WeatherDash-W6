@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
+    <!-- CSS link -->
     <link rel="stylesheet" href="Assets/CSS/style.css" />
   </head>
   <body>
@@ -18,18 +19,62 @@
         <p class="subtitle">Small subtitle</p>
       </div>
     </section>
-    <h1 id="search_title">Search for a City:</h1>
-    <div class="field has-addons">
-      <div class="control">
-        <input class="input" type="text" placeholder="Search Cities" />
-      </div>
-      <div class="control">
-        <button class="button is-info" id="search_btn">Search</button>
-      </div>
-    </div>
+
+    <!-- Search Bar -->
     <section class="section">
-      <div class="container"></div>
+      <h1 id="search_title">Search for a City:</h1>
+      <div class="field has-addons">
+        <div class="control">
+          <input class="input" type="text" placeholder="Search Cities" />
+        </div>
+        <div class="control">
+          <button class="button is-info" id="search_btn">Search</button>
+        </div>
+      </div>
     </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-6"></div>
+          <div class="column is-6">
+            <div class="box">Day Forcast for search</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-2">
+            <div class="box">Recently Searched Cities</div>
+          </div>
+          <div class="column is-1"></div>
+          <div class="column is-2">
+            <div class="box">Day 1</div>
+          </div>
+          <div class="column is-2">
+            <div class="box">Day 2</div>
+          </div>
+          <div class="column is-2">
+            <div class="box">Day 3</div>
+          </div>
+          <div class="column is-2">
+            <div class="box">Day 4</div>
+          </div>
+          <div class="column is-2">
+            <div class="box mr-3">Day 5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS/FA scripts -->
+    <script
+      src="https://kit.fontawesome.com/ce42e41f83.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/Js/script.js"></script>
   </body>
 </html>
