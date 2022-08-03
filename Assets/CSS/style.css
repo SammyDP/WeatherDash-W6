@@ -7,6 +7,13 @@
   background-color: #999;
 }
 
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(67, 154, 197);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
 .hero {
   margin-left: 30%;
   margin-right: 30%;
@@ -14,7 +21,8 @@
 }
 
 #search_title {
-  color: black;
+  color: rgb(39, 52, 122);
+  text-shadow: 1px 1px 2px rgb(7, 228, 7);
   font-size: 2rem;
   font-weight: bolder;
 }
@@ -30,4 +38,8 @@
 .five-day {
   background-color: rgb(72, 72, 199);
   color: rgb(66, 228, 128);
+}
+
+.footer {
+  background: transparent;
 }

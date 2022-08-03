@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Weather Dashboard</title>
+    <link
+      rel="title icon"
+      href="https://user-images.githubusercontent.com/107449948/182532290-62e6066f-8086-4e38-a65b-c7c729d73677.png"
+    />
     <!-- bulma link -->
     <link
       rel="stylesheet"
@@ -12,11 +16,16 @@
     <!-- CSS link -->
     <link rel="stylesheet" href="Assets/CSS/style.css" />
   </head>
+
   <body>
+    <!-- Hero -->
     <section class="hero is-small is-primary">
       <div class="hero-body has-text-centered">
-        <p class="title">5 Day Weather Forcast</p>
-        <p class="subtitle">Search a city to get a daily & 5 day forcast</p>
+        <p class="title hero-text">5 Day Weather Forcast</p>
+        <p class="subtitle hero-text">
+          Search a city to get a daily & 5 day forcast
+        </p>
+        <p class="clock">clock</p>
       </div>
     </section>
 
@@ -40,8 +49,10 @@
       <div class="container">
         <div class="columns">
           <div class="column is-6"></div>
-          <div class="column is-6">
-            <div class="box" id="daily_forcast">Daily Forcast</div>
+          <div class="column is-6 has-text-centered">
+            <div class="box" id="daily_forcast">
+              <strong>Daily Forcast:</strong>
+            </div>
           </div>
         </div>
       </div>
@@ -50,19 +61,21 @@
     <!-- Recent Searches -->
     <section class="section">
       <div class="container">
-        <div class="columns">
+        <div class="columns has-text-centered">
           <div class="column is-2">
             <div class="box recent-city">
-              Recently Searched Cities
+              Recent Cities:
               <ul id="recent_cities"></ul>
               <button class="button is-small is-success" id="clear_search">
                 Clear
               </button>
             </div>
           </div>
+        </div>
 
-          <!-- 5 Day Forcast -->
-          <div class="column is-1"></div>
+        <!-- 5 Day Forcast -->
+        <div class="columns has-text-centered is-gapless ml-6">
+          <div class="column is-2"></div>
           <div class="column is-2">
             <div class="box five-day" id="day1">Day 1</div>
           </div>
@@ -76,11 +89,27 @@
             <div class="box five-day" id="day4">Day 4</div>
           </div>
           <div class="column is-2">
-            <div class="box five-day mr-3" id="day5">Day 5</div>
+            <div class="box five-day" id="day5">Day 5</div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma</strong> by
+          <a href=" https://sammydp.github.io/Portfolio-W2/">Sammy Pennell</a>.
+          The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+          website content is licensed
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            >CC BY NC SA 4.0</a
+          >.
+        </p>
+      </div>
+    </footer>
 
     <!-- JS/FA scripts -->
     <script

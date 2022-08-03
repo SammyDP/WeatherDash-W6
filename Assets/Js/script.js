@@ -10,6 +10,14 @@ var day4El = document.querySelector("#day4");
 var day5El = document.querySelector("#day5");
 var APIKey = "237d2dfde4a0e93ba29a4167915f9688";
 
+// Clock
+let clock = document.querySelector(".clock");
+setInterval(function () {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
+// Search Button
 searchEl.addEventListener("click", function () {
   let city = inputEl.value;
   let cityUrl =
