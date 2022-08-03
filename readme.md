@@ -14,7 +14,7 @@
 
 <p>&nbsp;</p>
 
-[<img src="https://user-images.githubusercontent.com/107449948/182535867-9063ee91-c7da-437c-bada-734ebd70e193.png">](https://sammydp.github.io/WeatherDash-W6/)
+[<img src="https://user-images.githubusercontent.com/107449948/182559226-ba58e87f-5ddc-4d10-8706-d355ee6287ab.png">](https://sammydp.github.io/WeatherDash-W6/)
 
 <p>&nbsp;</p>
 
