@@ -13,6 +13,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS link -->
     <link rel="stylesheet" href="Assets/CSS/style.css" />
   </head>
@@ -21,11 +28,12 @@
     <!-- Hero -->
     <section class="hero is-small is-primary">
       <div class="hero-body has-text-centered">
-        <p class="title hero-text">5 Day Weather Forcast</p>
-        <p class="subtitle hero-text">
+        <p class="hero-text" id="hero_title">5 Day Weather Forcast</p>
+        <p class="hero-text" id="hero_subtitle">
           Search a city to get a daily & 5 day forcast
         </p>
-        <p class="clock">clock</p>
+        <p class="hero-text date">date</p>
+        <p class="hero-text clock"></p>
       </div>
     </section>
 
@@ -116,6 +124,8 @@
       src="https://kit.fontawesome.com/ce42e41f83.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/Js/script.js"></script>
   </body>
 </html>
