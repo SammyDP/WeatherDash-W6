@@ -12,7 +12,7 @@
 
 <p>&nbsp;</p>
 
-[<img src="https://user-images.githubusercontent.com/107449948/182521701-3ec7f926-98c3-4717-81d3-cacfc869bb0f.png">](https://sammydp.github.io/WeatherDash-W6/)
+[<img src="https://user-images.githubusercontent.com/107449948/182522714-60f6471b-a6dc-42ff-9b32-79ee8df18e27.png">](https://sammydp.github.io/WeatherDash-W6/)
 
 <p>&nbsp;</p>
 
