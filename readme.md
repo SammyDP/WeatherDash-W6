@@ -1,19 +1,22 @@
-<p align="center">
 <img src="https://user-images.githubusercontent.com/107449948/180933920-7ed27beb-9b51-480b-acd2-8cf583afaade.png" />
 
-# Weather Dashboard
+<h1 align="center">Weather Dashboard </h1>
 
-Create an application that allows you to search cities and pull up weather info from an API
+<p align="center">Create an application that allows you to search cities and pull up weather info from an API</p>
 
 <p>&nbsp;</p>
 
 ## Table of Contents
 
-- [Directions](#directions)
+- [User Story](#user-story)
 
 <p>&nbsp;</p>
 
-# Directions
+[<img src="https://user-images.githubusercontent.com/107449948/182521701-3ec7f926-98c3-4717-81d3-cacfc869bb0f.png">](https://sammydp.github.io/WeatherDash-W6/)
+
+<p>&nbsp;</p>
+
+# User Story
 
     -AS A traveler
     -I WANT to see the weather outlook for multiple cities

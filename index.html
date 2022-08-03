@@ -15,13 +15,13 @@
   <body>
     <section class="hero is-small is-primary">
       <div class="hero-body has-text-centered">
-        <p class="title">Weather Dashboard</p>
-        <p class="subtitle">Small subtitle</p>
+        <p class="title">5 Day Weather Forcast</p>
+        <p class="subtitle">Search a city to get a daily & 5 day forcast</p>
       </div>
     </section>
 
     <!-- Search Bar -->
-    <section class="section">
+    <section class="section search-bar">
       <h1 id="search_title">Search for a City:</h1>
       <div class="field has-addons">
         <div class="control">
@@ -52,29 +52,31 @@
       <div class="container">
         <div class="columns">
           <div class="column is-2">
-            <div class="box">
+            <div class="box recent-city">
               Recently Searched Cities
               <ul id="recent_cities"></ul>
-              <button class="button is-success" id="clear_search">Clear</button>
+              <button class="button is-small is-success" id="clear_search">
+                Clear
+              </button>
             </div>
           </div>
 
           <!-- 5 Day Forcast -->
           <div class="column is-1"></div>
           <div class="column is-2">
-            <div class="box" id="day1">Day 1</div>
+            <div class="box five-day" id="day1">Day 1</div>
           </div>
           <div class="column is-2">
-            <div class="box" id="day2">Day 2</div>
+            <div class="box five-day" id="day2">Day 2</div>
           </div>
           <div class="column is-2">
-            <div class="box" id="day3">Day 3</div>
+            <div class="box five-day" id="day3">Day 3</div>
           </div>
           <div class="column is-2">
-            <div class="box" id="day4">Day 4</div>
+            <div class="box five-day" id="day4">Day 4</div>
           </div>
           <div class="column is-2">
-            <div class="box mr-3" id="day5">Day 5</div>
+            <div class="box five-day mr-3" id="day5">Day 5</div>
           </div>
         </div>
       </div>
