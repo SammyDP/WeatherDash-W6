@@ -32,7 +32,6 @@
         <p class="hero-text" id="hero_subtitle">
           Search a city to get a daily & 5 day forcast
         </p>
-        <p class="hero-text date">date</p>
         <p class="hero-text clock"></p>
       </div>
     </section>
@@ -53,18 +52,38 @@
     </section>
 
     <!-- Daily Forcast -->
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-6"></div>
-          <div class="column is-6 has-text-centered">
-            <div class="box" id="daily_forcast">
-              <strong>Daily Forcast:</strong>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-5"></div>
+        <div class="column is-4">
+          <div class="box" id="daily_forcast">
+            <p class="title has-text-centered" id="daily_city">Denver</p>
+            <p class="subtitle date has-text-centered">date</p>
+            <div class="columns">
+              <div class="column">
+                <p class="daily-temp">
+                  Temperature: <span id="daily_temp">90</span>
+                </p>
+                <p class="daily-humidity">
+                  Humidity: <span id="daily_humidity">10%</span>
+                </p>
+                <p class="daily-wind">
+                  Wind Speed: <span id="daily_wind">15 mph</span>
+                </p>
+                <p class="daily-uv">UV Index: <span id="daily_uv">10</span></p>
+              </div>
+              <div class="column">
+                <img
+                  src="Assets/Images/weather.png"
+                  alt="weather icon"
+                  class="daily-icon"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Recent Searches -->
     <section class="section">
@@ -85,19 +104,49 @@
         <div class="columns has-text-centered is-gapless ml-6">
           <div class="column is-2"></div>
           <div class="column is-2">
-            <div class="box five-day" id="day1">Day 1</div>
+            <div class="box five-day" id="day1">
+              <h2 class="forcast-day">Monday</h2>
+              <img src="" alt="" class="forcast_icon" />
+              <p>Temp: <span class="forcast-temp"></span></p>
+              <p>Wind: <span class="forcast-wind"></span></p>
+              <p>Humidity: <span class="forcast-humidity"></span></p>
+            </div>
           </div>
           <div class="column is-2">
-            <div class="box five-day" id="day2">Day 2</div>
+            <div class="box five-day" id="day2">
+              <h2 class="forcast-day">Tuesday</h2>
+              <img src="" alt="" class="forcast_icon" />
+              <p>Temp: <span class="forcast-temp"></span></p>
+              <p>Wind: <span class="forcast-wind"></span></p>
+              <p>Humidity: <span class="forcast-humidity"></span></p>
+            </div>
           </div>
           <div class="column is-2">
-            <div class="box five-day" id="day3">Day 3</div>
+            <div class="box five-day" id="day3">
+              <h2 class="forcast-day">Wednesday</h2>
+              <img src="" alt="" class="forcast_icon" />
+              <p>Temp: <span class="forcast-temp"></span></p>
+              <p>Wind: <span class="forcast-wind"></span></p>
+              <p>Humidity: <span class="forcast-humidity"></span></p>
+            </div>
           </div>
           <div class="column is-2">
-            <div class="box five-day" id="day4">Day 4</div>
+            <div class="box five-day" id="day4">
+              <h2 class="forcast-day">Thursday</h2>
+              <img src="" alt="" class="forcast_icon" />
+              <p>Temp: <span class="forcast-temp"></span></p>
+              <p>Wind: <span class="forcast-wind"></span></p>
+              <p>Humidity: <span class="forcast-humidity"></span></p>
+            </div>
           </div>
           <div class="column is-2">
-            <div class="box five-day" id="day5">Day 5</div>
+            <div class="box five-day" id="day5">
+              <h2 class="forcast-day">Friday</h2>
+              <img src="" alt="" class="forcast_icon" />
+              <p>Temp: <span class="forcast-temp"></span></p>
+              <p>Wind: <span class="forcast-wind"></span></p>
+              <p>Humidity: <span class="forcast-humidity"></span></p>
+            </div>
           </div>
         </div>
       </div>

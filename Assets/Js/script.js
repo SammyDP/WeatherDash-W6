@@ -2,7 +2,11 @@ var searchEl = document.querySelector("#search_btn");
 var inputEl = document.querySelector(".input");
 var clearEl = document.querySelector("#clear_search");
 var recentEl = document.querySelector("#recent_cities");
-var dailyEl = document.querySelector("#daily_forcast");
+var dailyEl = document.querySelector("#daily_city");
+var dayTempEl = document.querySelector("#daily_temp");
+var dayHumidityEl = document.querySelector("#daily_humidity");
+var dayWindEl = document.querySelector("#daily_wind");
+var dayUVEl = document.querySelector("#daily_uv");
 var day1El = document.querySelector("#day1");
 var day2El = document.querySelector("#day2");
 var day3El = document.querySelector("#day3");
@@ -11,7 +15,7 @@ var day5El = document.querySelector("#day5");
 var APIKey = "237d2dfde4a0e93ba29a4167915f9688";
 
 // Date
-var currentDay = moment().format("MMMM Do YYYY");
+var currentDay = moment().format("dddd l");
 $(".date").text(currentDay);
 
 // Clock
@@ -24,28 +28,32 @@ setInterval(function () {
 // Search Button
 searchEl.addEventListener("click", function () {
   let city = inputEl.value;
-  let cityUrl =
-    "http://api.openweathermap.org/geo/1.0/direct?q=" +
-    city +
-    "&limit=5&appid=" +
-    APIKey;
+  let currentUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`;
 
-  fetch(cityUrl);
-  console.log(cityUrl);
-
-  //   fetch request to api using city
-  // use geocode api with city to get lat/long
-  // call getWeather(data[0].lat, data[0].lon)
+  fetch(currentUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    });
 });
 
-// requestUrl =
-//   "https://api.openweathermap.org/data/2.5/onecall?lat=" +
-//   lat +
-//   "&lon=" +
-//   lon +
-//   "&exclude=hourly,minutely&appid={API key}";
+// let cityUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey}`;
 
-// create getWeather(lat, lon)
-// fetch request to weather api
-// create weather cards (5)
-// for loop to run through the data
+// fetch(cityUrl)
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (data) {
+//     console.log(data);
+//     const forecastEls = document.querySelectorAll(".f");
+//     for (i = 0; i < forecastEls.length; i++) {
+//       forecastEls[i].innerHTML = "";
+//     }
+//   });
+// create a fetch to get uv and insert in dayUVEl
+// create a fetch to get 5 day, for loop and insert in day, icon, temp, wind, humidity
+// wrap all fetchs in one function to be active on search
+// create "click" save funtions
+// create "click" clear functions
